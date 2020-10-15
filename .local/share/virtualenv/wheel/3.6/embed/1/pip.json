@@ -1,0 +1,12 @@
+{
+  "completed": "2020-10-04T13:55:29.325778Z",
+  "periodic": true,
+  "started": "2020-10-04T13:55:23.887242Z",
+  "versions": [
+    {
+      "filename": "pip-20.2.3-py2.py3-none-any.whl",
+      "found_date": "2020-10-04T13:55:24.480088Z",
+      "release_date": "2020-09-08T12:37:09.000000Z"
+    }
+  ]
+}

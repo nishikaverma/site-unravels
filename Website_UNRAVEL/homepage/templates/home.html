@@ -1,0 +1,146 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<div class="site-blocks-cover overlay" style="background-image: url( {% static 'images/bg.jpg' %});" data-aos="fade" id="home-section">
+
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+          
+        <h2 style="line-height: 915px;  color: aquamarine;  font-size: 2.3em;"><i> "Think like a proton always positive"</i></h2>  
+
+        <div class="col-md-8 mt-lg-5 text-center">
+          <h1 class="text-uppercase" data-aos="fade-up"></h1>
+          <p class="mb-5 desc"  data-aos="fade-up" data-aos-delay="100"></p>       
+        </div>
+          
+      </div>
+    </div>
+  </div> 
+  <section class="site-section" id="blog-section" style="background: rgb(7,24,30); ">
+    <div class="container">
+      <div class="row mb-5">
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="">
+          <div class="h-entry">
+            <a href="{% url 'All_About_A_Website' %}">
+              <img src="{% static 'images/aboutwebsite.jpg' %}" alt="Image" class="img-fluid">
+            </a>
+            <h2 class="font-size-regular" style="color: aquamarine;">All about a Website</h2>
+            <div class="meta mb-4">Samarth Verma <span class="mx-2">&bullet;</span> Sept 12, 2020<span class="mx-2"></div>
+            <p>Here is a brief overview about what a website is, how does a basic website works and every basic thing you need to know about a it.</p>
+            <p><a href="{% url 'All_About_A_Website' %}">Continue Reading...</a></p>
+          </div> 
+        </div>
+        
+        <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="h-entry">
+            <a href="{% url 'Cyber-Security' %}">
+              <img src="{% static 'images/cyber.jpg' %}" alt="Image" class="img-fluid">
+            </a>
+            <h2 class="font-size-regular" style="color: aquamarine;">Cyber Security 101</h2>
+            <div class="meta mb-4">Samarth Verma<span class="mx-2">&bullet;</span>Sept 17, 2020<span class="mx-2"></div>
+            <p> Looking for a brief overview on Cyber Security? Then here is what you should read, which will help you to dive further deep in the field of Cyber Security. </p>
+            <p><a href="{% url 'Cyber-Security' %}">Continue Reading...</a></p>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="h-entry">
+            <a href="#">
+              <img src="{% static 'images/aboutwebsite.jpg' %}" alt="Image" class="img-fluid">
+            </a>
+            <h2 class="font-size-regular" style="color: aquamarine;">Upcomming</h2>
+            <div class="meta mb-4">Lets see who wins <span class="mx-2">&bullet;</span>TBA TBA TBA<span class="mx-2"></div>
+            <p>Info about the upcomming blog</p>
+            <p><a href="#">Continue Reading...</a></p>
+          </div> 
+        </div>
+        
+      </div>
+    </div><br><br>
+  </section> 
+  {% endblock %}
+
+
+
+
+
+  <!--
+  <section style="background: rgb(7,24,30);"><div><center><script src="https://apps.elfsight.com/p/platform.js" defer></script>
+    <div class="elfsight-app-f5961dbc-d557-4c27-8ee9-949a14748432"></div></center></div><br><br><br></section>
+
+  <section style="background: rgb(7,24,30);">
+    <div><center><script src="https://apps.elfsight.com/p/platform.js" defer></script>
+      <div class="elfsight-app-9786fb74-6861-4a14-9618-73c3493ec017"></div></center></div>
+  </section>
+  -->
+
+
+  <!--  
+  <section class="site-section">
+    <div class="container">
+
+      <div class="row mb-5 justify-content-center">
+        <div class="col-md-7 text-center">
+          <h2 class="section-title mb-3" data-aos="fade-up" data-aos-delay="">Our Features</h2>
+          <p class="lead" data-aos="fade-up" data-aos-delay="100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus minima neque tempora reiciendis.</p>
+        </div>
+      </div>
+      
+      <div class="row" >
+        <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
+
+          <div class="owl-carousel slide-one-item-alt">
+            <img src="{% static 'images/slide_1.jpg' %}" alt="Image" class="img-fluid">
+            <img src="{% static 'images/slide_2.jpg' %}" alt="Image" class="img-fluid">
+            <img src="{% static 'images/slide_3.jpg' %}" alt="Image" class="img-fluid">
+            <img src="{% static 'images/slide_4.jpg' %}" alt="Image" class="img-fluid">
+          </div>
+          <div class="custom-direction">
+            <a href="#" class="custom-prev"><span><span class="icon-keyboard_backspace"></span></span></a><a href="#" class="custom-next"><span><span class="icon-keyboard_backspace"></span></span></a>
+          </div>
+
+        </div>
+        <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
+          
+          <div class="owl-carousel slide-one-item-alt-text">
+            <div>
+              <h2 class="section-title mb-3">Minimal and Modern Design</h2>
+              <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Est qui eos quasi ratione nostrum excepturi id recusandae fugit omnis ullam pariatur itaque nisi voluptas impedit  Quo suscipit omnis iste velit maxime.</p>
+
+              <p><a href="#" class="btn btn-primary mr-2 mb-2">Learn More</a></p>
+            </div>
+            <div>
+              <h2 class="section-title mb-3">Do things with love</h2>
+              <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Est qui eos quasi ratione nostrum excepturi id recusandae fugit omnis ullam pariatur itaque nisi voluptas impedit  Quo suscipit omnis iste velit maxime.</p>
+
+              <p><a href="#" class="btn btn-primary mr-2 mb-2">Learn More</a></p>
+            </div>
+            <div>
+              <h2 class="section-title mb-3">Take your business online</h2>
+              <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Est qui eos quasi ratione nostrum excepturi id recusandae fugit omnis ullam pariatur itaque nisi voluptas impedit  Quo suscipit omnis iste velit maxime.</p>
+
+              <p><a href="#" class="btn btn-primary mr-2 mb-2">Learn More</a></p>
+            </div>
+            <div>
+              <h2 class="section-title mb-3">4 Our Dedicated Professionals</h2>
+              <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Est qui eos quasi ratione nostrum excepturi id recusandae fugit omnis ullam pariatur itaque nisi voluptas impedit  Quo suscipit omnis iste velit maxime.</p>
+
+              <p><a href="#" class="btn btn-primary mr-2 mb-2">Learn More</a></p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+-->
